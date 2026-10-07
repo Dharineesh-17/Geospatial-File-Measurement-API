@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Survey Field Project</name>
+    <description>Sample geospatial survey containing multiple geometry types</description>
+    
+    <!-- Polygon: Solar Park Zone -->
+    <Placemark id="poly-01">
+      <name>Solar Array Alpha</name>
+      <description>Perimeter boundary of solar installation alpha</description>
+      <ExtendedData>
+        <Data name="facility_type"><value>Solar Field</value></Data>
+        <Data name="capacity_mw"><value>45</value></Data>
+        <Data name="inspector"><value>John Doe</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <extrude>1</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              77.5900,12.9700,0
+              77.5950,12.9700,0
+              77.5950,12.9750,0
+              77.5900,12.9750,0
+              77.5900,12.9700,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- LineString: Power Transmission Line -->
+    <Placemark id="line-01">
+      <name>Transmission Line Main Grid</name>
+      <description>High voltage transmission line connecting to substation</description>
+      <ExtendedData>
+        <Data name="voltage_kv"><value>132</value></Data>
+        <Data name="material"><value>ACSR</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          77.5900,12.9700,0
+          77.5925,12.9730,0
+          77.5960,12.9740,0
+          77.5990,12.9780,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Point: Control Station -->
+    <Placemark id="pt-01">
+      <name>Control Tower Marker</name>
+      <description>Telemetry monitoring and control tower</description>
+      <ExtendedData>
+        <Data name="elevation_m"><value>920</value></Data>
+        <Data name="status"><value>ACTIVE</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>77.5920,12.9720,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
