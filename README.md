@@ -29,8 +29,8 @@ Includes an interactive **Leaflet.js Dashboard** with map preview and live metri
 
 ### 1. Clone & Navigate to Repository
 ```bash
-git clone <your-repo-link>
-cd aero
+git clone https://github.com/Dharineesh-17/Geospatial-File-Measurement-API.git
+cd Geospatial-File-Measurement-API
 ```
 
 ### 2. Create and Activate Virtual Environment
